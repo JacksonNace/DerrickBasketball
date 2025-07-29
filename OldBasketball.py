@@ -261,8 +261,8 @@ for player, stats in sorted_players:
          f"{_3pt_pct_formatted:<{pct_width}}")
   print(row)
 
-player1_compare = ''
-player2_compare = ''
+player1_compare = 'Paolo'
+player2_compare = 'Jackson'
 
 # Call the generalized function
 player_pair_dynamics = calculate_player_pair_team_dynamics_win_percentage(games_v3, player1_compare, player2_compare)

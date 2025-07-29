@@ -202,8 +202,13 @@ games_v3 = [
       'winning_team': 'White' },
       #July 28 Black ? - ? White
   {   'team1': 'Black',
-      'team1_players': ['Sawyer', 'Denny', 'Landon', 'Paolo', 'Quan'],
+      'team1_players': ['Sawyer', 'Hernan', 'Landon', 'Paolo', 'Quan'],
       'team2': 'White',
       'team2_players': ['Joe', 'Roberto', 'Jackson', 'Denny', 'Mikey'],
+      'winning_team': 'White' },
+  {   'team1': 'Black',
+      'team1_players': ['Sawyer', 'Bockoven', 'Landon', 'Paolo', 'Hernan'],
+      'team2': 'White',
+      'team2_players': ['Joe', 'Roberto', 'Jackson', 'ChrisLeger', 'Mikey'],
       'winning_team': 'White' },
 ]
