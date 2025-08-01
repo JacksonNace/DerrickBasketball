@@ -294,23 +294,19 @@ target_player = 'Jackson'  # Change this to whatever player you want to analyze
 print(f"\n\n{target_player}'s Win Rates vs All Other Players:")
 print("-" * 80)
 
-# Get win rates against all other players
 player_vs_all_data = calculate_player_vs_all_win_rates(games_v3, target_player, all_players_v3)
 
-# Sort by overall win rate (descending)
 sorted_matchups = sorted(player_vs_all_data.items(), 
                         key=lambda x: x[1]['overall_win_rate'], 
                         reverse=True)
 
 # Print header
 opponent_col_width = max(len(player) for player in all_players_v3 if player != target_player) + 2
-overall_win_pct_width = len("Overall Win %") + 2
 total_games_width = len("Total Games") + 2
 same_team_width = len("Same Team") + 2
 opposing_width = len("Opposing") + 2
 
 matchup_header = (f"{'Opponent':<{opponent_col_width}}"
-                 f"{'Overall Win %':<{overall_win_pct_width}}"
                  f"{'Total Games':<{total_games_width}}"
                  f"{'Same Team':<{same_team_width}}"
                  f"{'Opposing':<{opposing_width}}")
@@ -330,7 +326,6 @@ for opponent, data in sorted_matchups:
     opposing_str = f"{data['opposing_team']['win_percentage'] * 100:.0f}% ({data['opposing_team']['games']})" if data['opposing_team']['games'] > 0 else "N/A"
     
     row = (f"{opponent:<{opponent_col_width}}"
-          f"{overall_pct:<{overall_win_pct_width}}"
           f"{total_games:<{total_games_width}}"
           f"{same_team_str:<{same_team_width}}"
           f"{opposing_str:<{opposing_width}}")

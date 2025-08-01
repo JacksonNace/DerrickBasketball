@@ -211,4 +211,15 @@ games_v3 = [
       'team2': 'White',
       'team2_players': ['Joe', 'Roberto', 'Jackson', 'ChrisLeger', 'Mikey'],
       'winning_team': 'White' },
+      #july 30 Black 24 - 21 White
+  {   'team1': 'Black',
+      'team1_players': ['Nefty', 'Bockoven', 'Landon', 'Mikey', 'Sam'],
+      'team2': 'White',
+      'team2_players': ['Joe', 'Roberto', 'Jackson', 'Landon', 'Hernan'],
+      'winning_team': 'Black' },
+  {   'team1': 'Black',
+      'team1_players': ['Waltman', 'Chance', 'Hernan', 'Greg', 'Quan'],
+      'team2': 'White',
+      'team2_players': ['Joe', 'Scott', 'Jackson', 'Mason', 'Mikey'],
+      'winning_team': 'White' },
 ]
