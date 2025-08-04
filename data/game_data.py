@@ -222,4 +222,10 @@ games_v3 = [
       'team2': 'White',
       'team2_players': ['Joe', 'Scott', 'Jackson', 'Mason', 'Mikey'],
       'winning_team': 'White' },
+      #August 4th Black 24 - White 28
+  {   'team1': 'Black',
+      'team1_players': ['Joe', 'Jackson', 'Mikey', 'Sawyer', 'Paolo'],
+      'team2': 'White',
+      'team2_players': ['Hernan', 'Waltman', 'Roberto', 'Mason', 'Quan'],
+      'winning_team': 'White' },
 ]
