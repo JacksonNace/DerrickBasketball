@@ -35,7 +35,6 @@ def calculate_player_all_stats(games_data, players):
 
         game_player_stats = game.get('player_stats', {})
 
-        # Only process games with a defined winning team
         if winning_team:
             for player in team1_players:
                 if player in players: # Ensure player is in our master list
@@ -289,7 +288,7 @@ for player, stats in sorted_players:
     print(row)
 
 # NEW SECTION: Player vs All Others
-target_player = 'Jackson'  # Change this to whatever player you want to analyze
+target_player = 'Sam'  # Change this to whatever player you want to analyze
 
 print(f"\n\n{target_player}'s Win Rates vs All Other Players:")
 print("-" * 80)

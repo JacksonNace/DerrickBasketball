@@ -228,4 +228,16 @@ games_v3 = [
       'team2': 'White',
       'team2_players': ['Hernan', 'Waltman', 'Roberto', 'Mason', 'Quan'],
       'winning_team': 'White' },
+      #August 6th Black 29 - White 28
+  {   'team1': 'Black',
+      'team1_players': ['Sam', 'Jackson', 'Scott', 'Roberto', 'Paolo'],
+      'team2': 'White',
+      'team2_players': ['Hernan', 'Denny', 'Sawyer', 'Nefty', 'Quan'],
+      'winning_team': 'Black' },
+      #August 11th Black 27 - 35 White
+  {   'team1': 'Black',
+      'team1_players': ['Mason', 'Landon', 'Paolo', 'Quan', 'Matt'],
+      'team2': 'White',
+      'team2_players': ['Joe', 'Roberto', 'Mikey', 'Hernan', 'RobFriend'],
+      'winning_team': 'White' },
 ]
