@@ -246,16 +246,16 @@ player_col_width = max(max_player_len, len("Player")) + 2
 win_pct_width = len("Win %") + 2
 games_played_width = len("Games") + 2
 streak_width = len("Streak") + 2
-ppg_width = len("PPG") + 2
-pct_width = len("XX%") + 2 # For 2P% and 3P%
+# ppg_width = len("PPG") + 2
+# pct_width = len("XX%") + 2 # For 2P% and 3P%
 
 header = (f"{'Player':<{player_col_width}}"
          f"{'Win %':<{win_pct_width}}"
          f"{'Games':<{games_played_width}}"
-         f"{'Streak':<{streak_width}}"
-         f"{'PPG':<{ppg_width}}"
-         f"{'2P%':<{pct_width}}"
-         f"{'3P%':<{pct_width}}")
+         f"{'Streak':<{streak_width}}")
+#          f"{'PPG':<{ppg_width}}"
+#          f"{'2P%':<{pct_width}}"
+#          f"{'3P%':<{pct_width}}")
 
 print(header)
 print("-" * len(header))
@@ -274,17 +274,17 @@ for player, stats in sorted_players:
     if stats['streak']['length'] >= 3:
         streak_str = f"{stats['streak']['length']}{stats['streak']['type']}"
 
-    ppg_formatted = f"{stats['ppg']:.1f}" if stats['games_with_shooting_stats'] > 0 else "N/A"
-    _2pt_pct_formatted = f"{stats['2pt_pct'] * 100:.0f}%" if stats['total_2pt_attempted'] > 0 else "N/A"
-    _3pt_pct_formatted = f"{stats['3pt_pct'] * 100:.0f}%" if stats['total_3pt_attempted'] > 0 else "N/A"
+    # ppg_formatted = f"{stats['ppg']:.1f}" if stats['games_with_shooting_stats'] > 0 else "N/A"
+    # _2pt_pct_formatted = f"{stats['2pt_pct'] * 100:.0f}%" if stats['total_2pt_attempted'] > 0 else "N/A"
+    # _3pt_pct_formatted = f"{stats['3pt_pct'] * 100:.0f}%" if stats['total_3pt_attempted'] > 0 else "N/A"
 
     row = (f"{player:<{player_col_width}}"
           f"{win_percentage_formatted:<{win_pct_width}}"
           f"{games_played:<{games_played_width}}"
-          f"{streak_str:<{streak_width}}"
-          f"{ppg_formatted:<{ppg_width}}"
-          f"{_2pt_pct_formatted:<{pct_width}}"
-          f"{_3pt_pct_formatted:<{pct_width}}")
+          f"{streak_str:<{streak_width}}")
+    #       f"{ppg_formatted:<{ppg_width}}"
+    #       f"{_2pt_pct_formatted:<{pct_width}}"
+    #       f"{_3pt_pct_formatted:<{pct_width}}")
     print(row)
 
 # NEW SECTION: Player vs All Others

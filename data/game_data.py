@@ -28,7 +28,7 @@ FORMAT
     }
 },
 '''
-all_players_v3 = ['Astor', 'Bockoven', 'Chance', 'ChrisLeger', 'ChrisNorman', 'Denny', 'Greg', 'Hernan', 'Jackson', 'Jared', 'Jean', 'Joe', 'Landon', 'Matt', 'Mason', 'Mikey', 'Nefty', 'Paolo', 'Quan', 'Roberto', 'RobFriend', 'Sam', 'Sawyer', 'Scott', 'Trace', 'Waltman']
+all_players_v3 = ['Astor', 'Bockoven', 'Chance', 'ChrisLeger', 'ChrisMolder', 'ChrisNorman', 'Denny', 'Greg', 'Hernan', 'Jackson', 'Jared', 'Jean', 'Joe', 'Landon', 'Matt', 'Mason', 'Mikey', 'Nefty', 'Paolo', 'Quan', 'Roberto', 'Sam', 'Sawyer', 'Scott', 'Trace', 'Waltman']
 games_v3 = [
       #June2nd2025 --- Black 20 - 23 White
   {   'team1': 'Black',
@@ -185,7 +185,7 @@ games_v3 = [
       'team2_players': ['Landon', 'Bockoven', 'Jared', 'Hernan', 'Scott'],
       'winning_team': 'White' },
   {   'team1': 'Black',
-      'team1_players': ['Hernan', 'Roberto', 'Leger', 'Bockoven', 'RobFriend'],
+      'team1_players': ['Hernan', 'Roberto', 'Leger', 'Bockoven', 'ChrisMolder'],
       'team2': 'White',
       'team2_players': ['Sam', 'Chance', 'Quan', 'Mikey', 'Waltman'],
       'winning_team': 'White' },
@@ -213,7 +213,7 @@ games_v3 = [
       'winning_team': 'White' },
       #july 30 Black 24 - 21 White
   {   'team1': 'Black',
-      'team1_players': ['Nefty', 'Bockoven', 'Landon', 'Mikey', 'Sam'],
+      'team1_players': ['Nefty', 'Bockoven', '', 'Mikey', 'Sam'],
       'team2': 'White',
       'team2_players': ['Joe', 'Roberto', 'Jackson', 'Landon', 'Hernan'],
       'winning_team': 'Black' },
@@ -238,7 +238,7 @@ games_v3 = [
   {   'team1': 'Black',
       'team1_players': ['Mason', 'Landon', 'Paolo', 'Quan', 'Matt'],
       'team2': 'White',
-      'team2_players': ['Joe', 'Roberto', 'Mikey', 'Hernan', 'RobFriend'],
+      'team2_players': ['Joe', 'Roberto', 'Mikey', 'Hernan', 'ChrisMolder'],
       'winning_team': 'White' },
       #August 12th Black 26 - 41 White
   {   'team1': 'Black',
@@ -246,4 +246,16 @@ games_v3 = [
       'team2': 'White',
       'team2_players': ['Joe', 'Roberto', 'Jackson', 'Sam', 'Hernan'],
       'winning_team': 'White' },
+      #August 13th Black 27 - 26 White
+  {   'team1': 'Black',
+      'team1_players': ['Jackson', 'Sam', 'ChrisMolder', 'Quan', 'Hernan'],
+      'team2': 'White',
+      'team2_players': ['Joe', 'Denny', 'Chance', 'Mikey', 'Waltman'],
+      'winning_team': 'Black' },
+      #September 2 Black 22 - 20 White
+  {   'team1': 'Black',
+      'team1_players': ['Hernan', 'Sam', 'ChrisMolder', 'Paolo', 'Matt'],
+      'team2': 'White',
+      'team2_players': ['Jackson', 'Quan', 'Roberto', 'Mikey', 'Waltman'],
+      'winning_team': 'Black' },
 ]
