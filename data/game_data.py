@@ -258,4 +258,23 @@ games_v3 = [
       'team2': 'White',
       'team2_players': ['Jackson', 'Quan', 'Roberto', 'Mikey', 'Waltman'],
       'winning_team': 'Black' },
+      # September 5 Black 45 - 40 White
+  {   'team1': 'Black',
+      'team1_players': ['Joe', 'Roberto', 'Bockoven', 'Hernan', 'Quan'],
+      'team2': 'White',
+      'team2_players': ['Sam', 'Waltman', 'ChrisMolder', 'Mikey', 'Paolo'],
+      'winning_team': 'Black',
+          'player_stats': {
+          'Sam': {'points': 10, '2pt_m': 5, '2pt_a': 8, '3pt_m': 0, '3pt_a': 1},
+          'Waltman': {'points': 6, '2pt_m': 0, '2pt_a': 1, '3pt_m': 2, '3pt_a': 7},
+          'ChrisMolder': {'points': 9, '2pt_m': 3, '2pt_a': 10, '3pt_m': 1, '3pt_a': 6},
+          'Mikey': {'points': 11, '2pt_m': 1, '2pt_a': 3, '3pt_m': 3, '3pt_a': 5},
+          'Paolo': {'points': 4, '2pt_m': 2, '2pt_a': 7, '3pt_m': 0, '3pt_a': 1},
+          'Joe': {'points': 18, '2pt_m': 3, '2pt_a': 7, '3pt_m': 4, '3pt_a': 14},
+          'Roberto': {'points': 6, '2pt_m': 3, '2pt_a': 4, '3pt_m': 0, '3pt_a': 4},
+          'Bockoven': {'points': 5, '2pt_m': 1, '2pt_a': 4, '3pt_m': 1, '3pt_a': 7},
+          'Hernan': {'points': 12, '2pt_m': 6, '2pt_a': 10, '3pt_m': 0, '3pt_a': 0},
+          'Quan': {'points': 4, '2pt_m': 2, '2pt_a': 5, '3pt_m': 0, '3pt_a': 1}
+      }
+  },
 ]
