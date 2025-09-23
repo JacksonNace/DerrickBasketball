@@ -28,7 +28,7 @@ FORMAT
     }
 },
 '''
-all_players_v3 = ['Astor', 'Bockoven', 'Chance', 'ChrisLeger', 'ChrisMolder', 'ChrisNorman', 'Denny', 'Greg', 'Hernan', 'Jackson', 'Jared', 'Jean', 'Joe', 'Landon', 'Matt', 'Mason', 'Mikey', 'Nefty', 'Paolo', 'Quan', 'Roberto', 'Sam', 'Sawyer', 'Scott', 'Trace', 'Waltman']
+all_players_v3 = ['Astor', 'Ahsanul', 'Bockoven', 'Chance', 'ChrisLeger', 'ChrisMolder', 'ChrisNorman', 'Denny', 'Greg', 'Hernan', 'Jackson', 'Jared', 'Jean', 'Joe', 'Landon', 'Matt', 'Mason', 'Mikey', 'Nefty', 'Paolo', 'Quan', 'Roberto', 'Sam', 'Sawyer', 'Scott', 'Trace', 'Waltman']
 games_v3 = [
       #June2nd2025 --- Black 20 - 23 White
   {   'team1': 'Black',
@@ -277,4 +277,35 @@ games_v3 = [
           'Quan': {'points': 4, '2pt_m': 2, '2pt_a': 5, '3pt_m': 0, '3pt_a': 1}
       }
   },
+  # 1 20 minute speed round as photographers were here. Carson and Astor ate
+  {   'team1': 'Black',
+      'team1_players': ['Scott', 'Joe', 'Ahsanul', 'Hernan'],
+      'team2': 'White',
+      'team2_players': ['Jackson', 'Mikey', 'Bockoven', 'Landon'],
+      'winning_team': 'White' },
+  #September 16, score sheet
+  {   'team1': 'Black',
+      'team1_players': ['Joe', 'Roberto', 'Bockoven', 'Hernan', 'Quan'],
+      'team2': 'White',
+      'team2_players': ['Sam', 'Waltman', 'ChrisMolder', 'Mikey', 'Paolo'],
+      'winning_team': 'Black',
+          'player_stats': {
+          'Joe': {'points': 19, '2pt_m': 5, '2pt_a': 5, '3pt_m': 3, '3pt_a': 10},
+          'Neftaly': {'points': 5, '2pt_m': 1, '2pt_a': 5, '3pt_m': 1, '3pt_a': 6},
+          'ChrisMolder': {'points': 9, '2pt_m': 3, '2pt_a': 10, '3pt_m': 1, '3pt_a': 6},
+          'Mikey': {'points': 11, '2pt_m': 1, '2pt_a': 3, '3pt_m': 3, '3pt_a': 5},
+          'Paolo': {'points': 4, '2pt_m': 2, '2pt_a': 7, '3pt_m': 0, '3pt_a': 1},
+          'Joe': {'points': 18, '2pt_m': 3, '2pt_a': 7, '3pt_m': 4, '3pt_a': 14},
+          'Roberto': {'points': 6, '2pt_m': 3, '2pt_a': 4, '3pt_m': 0, '3pt_a': 4},
+          'Bockoven': {'points': 5, '2pt_m': 1, '2pt_a': 4, '3pt_m': 1, '3pt_a': 7},
+          'Hernan': {'points': 12, '2pt_m': 6, '2pt_a': 10, '3pt_m': 0, '3pt_a': 0},
+          'Quan': {'points': 4, '2pt_m': 2, '2pt_a': 5, '3pt_m': 0, '3pt_a': 1}
+      }
+  },
+  #September 23 Black 26 - 27 White
+  {   'team1': 'Black',
+      'team1_players': ['Bockoven', 'Paolo', 'Roberto', 'Landon', 'Hernan'],
+      'team2': 'White',
+      'team2_players': ['Joe', 'Quan', 'Mikey', 'Matt', 'Waltman'],
+      'winning_team': 'White' },
 ]
