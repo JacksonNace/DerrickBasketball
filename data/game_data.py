@@ -98,8 +98,6 @@ games_v3 = [
       'team2': 'White',
       'team2_players': ['Waltman', 'Chance', 'ChrisLeger', 'Hernan', 'Sam'],
       'winning_team': 'White',
-      # 'player_stats' needs to be INSIDE the game's dictionary,
-      # and its keys must be unique player names from this game.
       'player_stats': {
           'Jared': {'points': 13, '2pt_m': 5, '2pt_a': 10, '3pt_m': 1, '3pt_a': 8},
           'Mikey': {'points': 7, '2pt_m': 2, '2pt_a': 7, '3pt_m': 1, '3pt_a': 2},
@@ -155,25 +153,25 @@ games_v3 = [
       'team2': 'White',
       'team2_players': ['Jackson', 'ChrisLeger', 'Sam', 'Roberto', 'Quan'],
       'winning_team': 'White' },
-      #June12025 
+      #July1,2025 
   {   'team1': 'Black',
       'team1_players': ['Joe', 'Denny', 'Landon', 'Waltman', 'Nefty'],
       'team2': 'White',
       'team2_players': ['Jackson', 'ChrisLeger', 'Paolo', 'Roberto', 'Quan'],
       'winning_team': 'Black' },
-      #June32025 
+      #July3,2025 
   {   'team1': 'Black',
       'team1_players': ['Joe', 'Roberto', 'Nefty', 'Hernan', 'Mikey'],
       'team2': 'White',
       'team2_players': ['Jackson', 'Paolo', 'Waltman', 'Quan', 'Bockoven'],
       'winning_team': 'White' },
-      #june7 2025 Black 31 - 37 White
+      #july7 2025 Black 31 - 37 White
   {   'team1': 'Black',
       'team1_players': ['Joe', 'Waltman', 'Bockoven', 'Hernan', 'Nefty'],
       'team2': 'White',
       'team2_players': ['Jackson', 'Paolo', 'Sam', 'Quan', 'Roberto'],
       'winning_team': 'White' },
-      #june8 2025 Black 27 - 26 White
+      #july8 2025 Black 27 - 26 White
   {   'team1': 'Black',
       'team1_players': ['Joe', 'Jackson', 'Mikey', 'Hernan', 'Bockoven'],
       'team2': 'White',
@@ -206,6 +204,7 @@ games_v3 = [
       'team2': 'White',
       'team2_players': ['Joe', 'Roberto', 'Jackson', 'Denny', 'Mikey'],
       'winning_team': 'White' },
+      #July 29th
   {   'team1': 'Black',
       'team1_players': ['Sawyer', 'Bockoven', 'Landon', 'Paolo', 'Hernan'],
       'team2': 'White',
@@ -217,6 +216,13 @@ games_v3 = [
       'team2': 'White',
       'team2_players': ['Joe', 'Roberto', 'Jackson', 'Landon', 'Hernan'],
       'winning_team': 'Black' },
+      #July 31st
+  {   'team1': 'Black',
+      'team1_players': ['Nefty', 'Bockoven', '', 'Mikey', 'Sam'],
+      'team2': 'White',
+      'team2_players': ['Joe', 'Roberto', 'Jackson', 'Landon', 'Hernan'],
+      'winning_team': 'Black' },
+
   {   'team1': 'Black',
       'team1_players': ['Waltman', 'Chance', 'Hernan', 'Greg', 'Quan'],
       'team2': 'White',
@@ -277,7 +283,7 @@ games_v3 = [
           'Quan': {'points': 4, '2pt_m': 2, '2pt_a': 5, '3pt_m': 0, '3pt_a': 1}
       }
   },
-  # 1 20 minute speed round as photographers were here. Carson and Astor ate
+  # 1 20 minute speed round as photographers were here. 4v4
   {   'team1': 'Black',
       'team1_players': ['Scott', 'Joe', 'Ahsanul', 'Hernan'],
       'team2': 'White',
