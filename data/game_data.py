@@ -326,4 +326,11 @@ games_v3 = [
       'team2': 'White',
       'team2_players': ['Joe', 'ChrisMolder', 'Mikey', 'Nefty'],
       'winning_team': 'Black' },
+  #September 30 Black 28 - 24 White
+  {   'team1': 'Black',
+      'team1_players': ['Jackson', 'Joe', 'Nefty', 'Roberto'],
+      'team2': 'White',
+      'team2_players': ['Hernan', 'ChrisMolder', 'Mikey', 'Paolo'],
+      'winning_team': 'Black' },
+    
 ]
