@@ -332,5 +332,36 @@ games_v3 = [
       'team2': 'White',
       'team2_players': ['Hernan', 'ChrisMolder', 'Mikey', 'Paolo'],
       'winning_team': 'Black' },
+  #October 7th, Black 28 - White 32
+  {   'team1': 'Black',
+      'team1_players': ['Joe', 'Jackson', 'Waltman', 'Chance', 'Neftaly'],
+      'team2': 'White',
+      'team2_players': ['Matt', 'ChrisLeger', 'Roberto', 'Paolo', 'Hernan'],
+      'winning_team': 'White',
+          'player_stats': {
+          'Joe': {'points': 24, '2pt_m': 6, '2pt_a': 12, '3pt_m': 4, '3pt_a': 14},
+          'Jackson': {'points': 4, '2pt_m': 2, '2pt_a': 6, '3pt_m': 0, '3pt_a': 0},
+          'Waltman': {'points': 11, '2pt_m': 1, '2pt_a': 4, '3pt_m': 3, '3pt_a': 10},
+          'Chance': {'points': 12, '2pt_m': 3, '2pt_a': 9, '3pt_m': 2, '3pt_a': 6},
+          'Neftaly': {'points': 2, '2pt_m': 1, '2pt_a': 4, '3pt_m': 0, '3pt_a': 7},
+          'Hernan': {'points': 8, '2pt_m': 4, '2pt_a': 5, '3pt_m': 0, '3pt_a': 3},
+          'Paolo': {'points': 2, '2pt_m': 1, '2pt_a': 3, '3pt_m': 0, '3pt_a': 1},
+          'Roberto': {'points': 14, '2pt_m': 4, '2pt_a': 10, '3pt_m': 2, '3pt_a': 4},
+          'ChrisLeger': {'points': 15, '2pt_m': 3, '2pt_a': 8, '3pt_m': 3, '3pt_a': 12},
+          'Quan': {'points': 19, '2pt_m': 8, '2pt_a': 12, '3pt_m': 1, '3pt_a': 2}
+      }
+  },
+  #October 10 Black 19 - 12 White
+  {   'team1': 'Black',
+      'team1_players': ['Jackson', 'Roberto', 'Nefty', 'Landon', 'Waltman'],
+      'team2': 'White',
+      'team2_players': ['Hernan', 'Denny', 'Astor', 'Mikey', 'Quan'],
+      'winning_team': 'Black' },
+  #October 17 Black 29 - 29 White
+  {   'team1': 'Black',
+      'team1_players': ['Jackson', 'Joe', 'Quan', 'Nefty', 'Mikey'],
+      'team2': 'White',
+      'team2_players': ['Landon', 'Bockoven', 'Paolo', 'Scott', 'Hernan'],
+      'winning_team': '' },
     
 ]

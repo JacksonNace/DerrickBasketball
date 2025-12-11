@@ -1,5 +1,5 @@
-from data.game_data import games_v3
-from data.game_data import all_players_v3
+from data.summer2025 import games_v3
+from data.summer2025 import all_players_v3
 
 def sort_streaks(item):
     player, streak_data = item
@@ -288,7 +288,7 @@ for player, stats in sorted_players:
     print(row)
 
 # NEW SECTION: Player vs All Others
-target_player = 'Jackson'  # Change this to whatever player you want to analyze
+target_player = 'Trace'  # Change this to whatever player you want to analyze
 
 print(f"\n\n{target_player}'s Win Rates vs All Other Players:")
 print("-" * 80)
