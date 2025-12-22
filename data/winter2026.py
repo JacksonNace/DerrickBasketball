@@ -36,4 +36,10 @@ games_v3 = [
     'team2': 'White',
     'team2_players': ['Paolo', 'Roberto', 'Greg', 'Joe', 'ChrisNorman'],
     'winning_team': 'White' },
+    #December 22th, 2025, Black  White
+  { 'team1': 'Black',
+    'team1_players': ['Jackson', 'Quan', 'Hernan', 'Waltman', 'Chance'],
+    'team2': 'White',
+    'team2_players': ['Paolo', 'Roberto', 'Greg', 'Joe', 'ChrisNorman'],
+    'winning_team': 'White' },
 ]

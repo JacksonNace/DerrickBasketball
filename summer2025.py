@@ -288,7 +288,7 @@ for player, stats in sorted_players:
     print(row)
 
 # NEW SECTION: Player vs All Others
-target_player = 'Trace'  # Change this to whatever player you want to analyze
+target_player = 'Jackson'  # Change this to whatever player you want to analyze
 
 print(f"\n\n{target_player}'s Win Rates vs All Other Players:")
 print("-" * 80)
