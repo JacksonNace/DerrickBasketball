@@ -1,0 +1,80 @@
+/* src/components/Nav/Nav.css */
+.top-nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 40px;
+  height: 70px;
+  background-color: #ffffff;
+  border-bottom: 1px solid #eee;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.nav-left {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.nav-title {
+  font-size: 1.25rem;
+  font-weight: 700;
+  margin: 0;
+  color: #1a1a1a;
+}
+
+.back-btn {
+  text-decoration: none;
+  color: #007AFF;
+  font-weight: 500;
+}
+
+.nav-links {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  gap: 10px;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: #666;
+  padding: 8px 16px;
+  border-radius: 6px;
+  font-weight: 500;
+  transition: all 0.2s;
+}
+
+.nav-links a:hover {
+  background-color: #f5f5f5;
+  color: #000;
+}
+
+.nav-links a.active {
+  background-color: #007AFF;
+  color: white;
+}
+
+.side-nav {
+  width: 100% !important;
+  height: 70px !important;
+  position: fixed !important;
+  top: 0 !important;
+  left: 0 !important;
+  display: flex !important;
+  flex-direction: row !important;
+  align-items: center !important;
+  justify-content: space-between !important;
+  padding: 0 40px !important;
+  box-sizing: border-box !important;
+}
+
+.nav-links {
+  display: flex !important;
+  flex-direction: row !important;
+  gap: 20px !important;
+  margin: 0 !important;
+}

@@ -29,3 +29,31 @@
   padding: 40px;
   text-align: center;
 }
+
+.content-area, main[style*="margin-left"] {
+  margin-left: 0 !important; /* Kill the sidebar gap */
+  padding-top: 100px !important; /* Push content down so it's not under the Nav */
+  width: 100% !important;
+  display: flex !important;
+  justify-content: center !important;
+}
+
+.derrick-page {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.derrick-content {
+  width: 100%;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.placeholder-card {
+  border: 2px dashed #ccc;
+  border-radius: 8px;
+  padding: 40px;
+  text-align: center;
+  background-color: white;
+}
