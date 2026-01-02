@@ -1,7 +1,7 @@
 import { useParams } from 'react-router-dom';
 import { winterGames } from '../data/winter2026';
 import { summerGames } from '../data/summer2025';
-import './Derrick.css';
+import '../styles/Derrick.css';
 
 const Derrick = () => {
   // I forgot what i did the groupid or useparams for ngl

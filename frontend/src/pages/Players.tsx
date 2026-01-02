@@ -3,7 +3,7 @@ import { useParams } from 'react-router-dom';
 import { winterGames, winterPlayers } from '../data/winter2026';
 import { summerGames, summerPlayers } from '../data/summer2025';
 import { calculateAllPlayerStats } from '../data/statsEngine';
-import './Players.css';
+import '../styles/Players.css';
 
 const Players = () => {
   const { groupId } = useParams();

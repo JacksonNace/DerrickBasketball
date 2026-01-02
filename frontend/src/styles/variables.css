@@ -1,0 +1,18 @@
+/* src/styles/variables.css */
+:root {
+  /* Brand Colors */
+  --primary-blue: #007bff;
+  --secondary-gray: #6c757d;
+  --success-green: #28a745;
+  --danger-red: #dc3545;
+
+  /* UI Colors */
+  --background-dark: #121212;
+  --card-bg: #1e1e1e;
+  --text-main: #ffffff;
+  --text-muted: #b3b3b3;
+
+  /* Accents from your Players code */
+  --streak-hot: #ff4500;
+  --streak-cold: #00ced1;
+}

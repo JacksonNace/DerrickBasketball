@@ -74,7 +74,7 @@
   border: 1px solid #333;
   border-radius: 12px;
   padding: 20px;
-  color: white;
+  color: #bbb;
   box-shadow: 0 4px 6px rgba(0,0,0,0.3);
 }
 
@@ -89,7 +89,6 @@
 
 .teams-text {
   font-size: 1.2rem;
-  font-weight: bold;
 }
 
 .winner-badge {
@@ -100,8 +99,8 @@
   background: #444;
 }
 
-.winner-badge.white { background: #f0f0f0; color: #000; }
-.winner-badge.black { background: #000; color: #fff; border: 1px solid #444; }
+.winner-badge.white { background: #fff; color: #aaa; border: 1px solid #1e1e1e;}
+.winner-badge.black { background: #1e1e1e; color: #fff; border: 1px solid #aaa; }
 
 .rosters-section p {
   margin: 4px 0;

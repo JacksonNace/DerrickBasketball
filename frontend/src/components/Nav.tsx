@@ -1,7 +1,7 @@
 // src/components/Nav/Nav.tsx
 import { Link, useParams, useLocation } from 'react-router-dom';
 import { groupsData } from '../data/groups';
-import './Nav.css';
+import '../styles/Nav.css';
 
 const Nav = () => {
   const { groupId } = useParams<{ groupId: string }>();
