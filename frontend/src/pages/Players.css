@@ -68,3 +68,114 @@
 }
 .streak-badge.W { background-color: #28a745; }
 .streak-badge.L { background-color: #dc3545; }
+
+.name-action-group {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.history-btn {
+  background-color: #333;
+  border: 1px solid #444;
+  color: #007AFF;
+  padding: 4px 10px;
+  border-radius: 6px;
+  font-size: 0.75rem;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.history-btn:hover {
+  background-color: #007AFF;
+  color: white;
+}
+
+/* History Dropdown Area */
+.player-history-dropdown {
+  background-color: #151515;
+  border: 1px solid #333;
+  border-top: none;
+  border-radius: 0 0 12px 12px;
+  padding: 15px 24px;
+  margin-top: -5px; /* Pull it up to connect with the card */
+  animation: slideDown 0.3s ease-out;
+}
+
+.player-history-dropdown h4 {
+  margin-top: 0;
+  font-size: 0.9rem;
+  color: #888;
+  margin-bottom: 10px;
+}
+
+.history-list {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.history-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 15px;
+  background: #1e1e1e;
+  border-radius: 8px;
+  border-left: 4px solid #333;
+  margin-bottom: 4px;
+}
+
+.history-main-info {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.result-indicator {
+  font-weight: 800;
+  font-size: 0.75rem;
+  width: 20px;
+  height: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 4px;
+}
+
+.result-indicator.win { background: #28a745; color: white; }
+.result-indicator.loss { background: #dc3545; color: white; }
+
+.history-player-stats {
+  display: flex;
+  gap: 15px;
+  font-size: 0.85rem;
+}
+
+.hist-stat {
+  color: #ddd;
+}
+
+.hist-stat strong {
+  color: #007AFF;
+}
+
+.hist-stat small {
+  color: #666;
+  font-size: 0.65rem;
+  text-transform: uppercase;
+}
+
+.no-stats-text {
+  color: #555;
+  font-size: 0.75rem;
+  font-style: italic;
+}
+
+.history-result.white { color: #fff; }
+.history-result.black { color: #aaa; }
+
+@keyframes slideDown {
+  from { opacity: 0; transform: translateY(-10px); }
+  to { opacity: 1; transform: translateY(0); }
+}

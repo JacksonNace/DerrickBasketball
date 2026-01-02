@@ -1,29 +1,10 @@
-// // src/Derrick/Derrick.tsx
-// import './Derrick.css';
-// import { useParams } from 'react-router-dom';
-
-// const Derrick = () => {
-//   const { groupId } = useParams<{ groupId: string }>();
-
-//   return (
-//     <div className="derrick-page">
-//       <main className="derrick-content">
-//         <div className="placeholder-card">
-//           <h3>Welcome to the Dashboard</h3>
-//           <p>This is the custom frontend for <strong>{groupId}</strong>.</p>
-//         </div>
-//       </main>
-//     </div>
-//   );
-// };
-
-// export default Derrick;
 import { useParams } from 'react-router-dom';
 import { winterGames } from '../data/winter2026';
 import { summerGames } from '../data/summer2025';
 import './Derrick.css';
 
 const Derrick = () => {
+  // I forgot what i did the groupid or useparams for ngl
   const { groupId } = useParams<{ groupId: string }>();
 
   const allGames = [...summerGames, ...winterGames];
@@ -37,7 +18,7 @@ const Derrick = () => {
         <div className="games-container">
           {chronologicalGames.map((game, index) => (
             <div key={index} className="game-card">
-              {/* Header with Teams and Result */}
+              {/* header */}
               <div className="game-card-header">
                 <span className="teams-text">{game.team1} vs {game.team2}</span>
                 <span className={`winner-badge ${game.winning_team.toLowerCase()}`}>
@@ -45,13 +26,13 @@ const Derrick = () => {
                 </span>
               </div>
 
-              {/* Rosters */}
+              {/* rosters */}
               <div className="rosters-section">
                 <p><strong>{game.team1}:</strong> {game.team1_players.join(', ')}</p>
                 <p><strong>{game.team2}:</strong> {game.team2_players.join(', ')}</p>
               </div>
 
-              {/* Conditional Stats Table */}
+              {/* conditional stats table */}
               {game.player_stats && (
                 <div className="stats-section">
                   <table className="stats-table">
