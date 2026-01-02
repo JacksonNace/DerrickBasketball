@@ -1,0 +1,70 @@
+/* src/Derrick/Players.css */
+
+.players-grid {
+  display: flex;
+  flex-direction: column; /* Stack cards vertically to allow them to be "longer" */
+  gap: 15px;
+  padding: 20px 0;
+  max-width: 900px; /* Limits the horizontal stretch for readability */
+  margin: 0 auto;
+}
+
+.player-card {
+  background-color: #1e1e1e;
+  border: 1px solid #333;
+  border-radius: 10px;
+  padding: 12px 20px; /* Reduced vertical padding, increased horizontal */
+  color: white;
+  display: flex;
+  flex-direction: column;
+}
+
+.player-card-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 8px; /* Reduced margin */
+  border-bottom: 1px solid #333;
+  padding-bottom: 6px;
+}
+
+/* src/Derrick/Players.css */
+
+.player-stats-horizontal {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+  width: 100%;
+}
+
+.stat-column {
+  display: flex;
+  flex: 1;
+  flex-direction: row; /* Force horizontal row */
+  justify-content: space-around; /* Distribute items evenly */
+  gap: 15px;
+}
+
+.stat-item {
+  display: flex;
+  flex-direction: row; /* Keep label and value side-by-side */
+  align-items: center;
+  gap: 8px;
+  white-space: nowrap; /* Prevent the % from dropping to a new line */
+}
+
+.stat-item .label {
+  color: #888;
+  font-size: 0.85rem;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.stat-item .value {
+  font-weight: 700;
+  font-size: 1rem;
+  color: #ffffff;
+}
+.streak-badge.W { background-color: #28a745; }
+.streak-badge.L { background-color: #dc3545; }

@@ -1,0 +1,135 @@
+.derrick-page {
+  min-height: 100vh;
+  color: #333;
+}
+
+.derrick-nav {
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  border-bottom: 1px solid #eee;
+}
+
+.back-btn {
+  text-decoration: none;
+  color: #007AFF;
+  font-weight: 500;
+}
+
+.derrick-content {
+  padding: 40px;
+}
+
+.placeholder-card {
+  border: 2px dashed #ccc;
+  border-radius: 8px;
+  padding: 40px;
+  text-align: center;
+}
+
+.content-area, main[style*="margin-left"] {
+  margin-left: 0 !important; /* Kill the sidebar gap */
+  padding-top: 100px !important; /* Push content down so it's not under the Nav */
+  width: 100% !important;
+  display: flex !important;
+  justify-content: center !important;
+}
+
+.derrick-page {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.derrick-content {
+  width: 100%;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.placeholder-card {
+  border: 2px dashed #ccc;
+  border-radius: 8px;
+  padding: 40px;
+  text-align: center;
+  background-color: white;
+}
+
+.derrick-content {
+  padding: 20px;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.games-container {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+/* Individual Game Card Box */
+.game-card {
+  background-color: #1e1e1e; /* Dark theme card */
+  border: 1px solid #333;
+  border-radius: 12px;
+  padding: 20px;
+  color: white;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.3);
+}
+
+.game-card-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid #333;
+  padding-bottom: 12px;
+  margin-bottom: 12px;
+}
+
+.teams-text {
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+.winner-badge {
+  padding: 4px 12px;
+  border-radius: 20px;
+  font-size: 0.85rem;
+  text-transform: uppercase;
+  background: #444;
+}
+
+.winner-badge.white { background: #f0f0f0; color: #000; }
+.winner-badge.black { background: #000; color: #fff; border: 1px solid #444; }
+
+.rosters-section p {
+  margin: 4px 0;
+  font-size: 0.9rem;
+  color: #bbb;
+}
+
+/* Stats Table Styling */
+.stats-section {
+  margin-top: 15px;
+  background: #252525;
+  border-radius: 8px;
+  padding: 10px;
+}
+
+.stats-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.85rem;
+}
+
+.stats-table th {
+  text-align: left;
+  color: #888;
+  padding: 8px;
+}
+
+.stats-table td {
+  padding: 8px;
+  border-top: 1px solid #333;
+}

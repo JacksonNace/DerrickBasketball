@@ -19,9 +19,9 @@ const Nav = () => {
 
       <ul className="nav-links">
         <li><Link to={`/group/${groupId}`} className={isActive(groupId || '')}>Dashboard</Link></li>
-        <li><Link to={`/group/${groupId}/players`} className={isActive('players')}>Players</Link></li>
-        <li><Link to={`/group/${groupId}/winrates`} className={isActive('winrates')}>Winrates</Link></li>
-        <li><Link to={`/group/${groupId}/predict`} className={isActive('predict')}>ML Predictor</Link></li>
+        <li><Link to={`/group/${groupId}/players`} className={isActive('players')}>Players (Coming soon)</Link></li>
+        <li><Link to={`/group/${groupId}/predict`} className={isActive('predict')}>ML Predictor (Coming soon)</Link></li>
+        <li><Link to={`/group/${groupId}/managethosescores`} className={isActive('managethosescores')}>Admin</Link></li>
       </ul>
     </header>
   );

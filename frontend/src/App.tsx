@@ -2,7 +2,9 @@
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Groups from './Groups';
 import Nav from './components/Nav';
-import DerrickDashboard from './Derrick/Derrick';
+import Derrick from './pages/Derrick';
+import Admin from './pages/Admin'
+import Players from './pages/Players'
 
 export default function App() {
   return (
@@ -17,10 +19,10 @@ export default function App() {
               <Nav /> 
               <main className="group-main-content">
                 <Routes>
-                  <Route path="/" element={<DerrickDashboard />} />
-                  <Route path="/players" element={<div>Player Lookup Coming Soon</div>} />
-                  <Route path="/winrates" element={<div>Winrates Coming Soon</div>} />
-                  <Route path="/predict" element={<div>ML Predictor Coming Soon</div>} />
+                  <Route path="/" element={<Derrick />} />
+                  <Route path="/players" element={<Players/>} />
+                  <Route path="/predict" element={<div>Coming soon!</div>} />
+                  <Route path="/managethosescores" element={<Admin/>} />
                 </Routes>
               </main>
             </div>

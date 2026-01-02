@@ -4,5 +4,5 @@ export interface Group {
 }
 
 export const groupsData: Group[] = [
-  { id: 'derrick', name: 'Derrick' },
+  { id: 'derrick', name: 'Derrick League' },
 ];
