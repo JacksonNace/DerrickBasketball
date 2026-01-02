@@ -28,7 +28,7 @@ FORMAT
     }
 },
 '''
-all_players_v3 = ['Astor', 'Ahsanul', 'Bockoven', 'Chance', 'ChrisLeger', 'ChrisNorman', 'Denny', 'Greg', 'Hernan', 'Jackson', 'Jared', 'Joe', 'Landon', 'Matt', 'Mason', 'Mikey', 'Nefty', 'Paolo', 'Quan', 'Roberto', 'Sam', 'Scott', 'Trace', 'Waltman']
+all_players_v3 = ['Astor', 'Ahsanul', 'Bockoven', 'Chance', 'ChrisLeger', 'ChrisNorman', 'Denny', 'Greg', 'Hernan', 'Jackson', 'Jared', 'Joe', 'Landon', 'Matt', 'Mason', 'Mikey', 'Nefty', 'Paolo', 'Quan', 'Roberto', 'Sam', 'Scott', 'Trace', 'Waltman', 'JJ', 'Iiams']
 games_v3 = [
   #December 8th, 2025, Black 24 - 32 White
   { 'team1': 'Black',
@@ -65,6 +65,44 @@ games_v3 = [
           'Waltman': {'points': 2, '2pt_m': 1, '2pt_a': 3, '3pt_m': 0, '3pt_a': 3},
           'ChrisLeger': {'points': 10, '2pt_m': 5, '2pt_a': 10, '3pt_m': 0, '3pt_a': 5},
           'Paolo': {'points': 5, '2pt_m': 1, '2pt_a': 2, '3pt_m': 1, '3pt_a': 1}
+      }
+  },
+    #December 30th, 2025, Black 73 - 55 White
+  {   'team1': 'Black',
+      'team1_players': ['Jared', 'Waltman', 'Joe', 'Quan', 'Roberto'],
+      'team2': 'White',
+      'team2_players': ['Jackson', 'ChrisLeger', 'Sam', 'Paolo', 'ChrisNorman'],
+      'winning_team': 'Black',
+          'player_stats': {
+          'Jared': {'points': 18, '2pt_m': 3, '2pt_a': 10, '3pt_m': 4, '3pt_a': 10},
+          'Waltman': {'points': 18, '2pt_m': 0, '2pt_a': 1, '3pt_m': 6, '3pt_a': 10},
+          'Joe': {'points': 5, '2pt_m': 1, '2pt_a': 3, '3pt_m': 1, '3pt_a': 4},
+          'Quan': {'points': 15, '2pt_m': 3, '2pt_a': 10, '3pt_m': 3, '3pt_a': 7},
+          'Roberto': {'points': 17, '2pt_m': 7, '2pt_a': 13, '3pt_m': 1, '3pt_a': 6},
+          'Jackson': {'points': 8, '2pt_m': 4, '2pt_a': 13, '3pt_m': 0, '3pt_a': 0},
+          'ChrisLeger': {'points': 24, '2pt_m': 3, '2pt_a': 5, '3pt_m': 6, '3pt_a': 13},
+          'Sam': {'points': 6, '2pt_m': 3, '2pt_a': 6, '3pt_m': 0, '3pt_a': 4},
+          'Paolo': {'points': 2, '2pt_m': 1, '2pt_a': 8, '3pt_m': 0, '3pt_a': 3},
+          'ChrisNorman': {'points': 15, '2pt_m': 3, '2pt_a': 10, '3pt_m': 3, '3pt_a': 5}
+      }
+  },
+    #December 31st, 2025, Black 45 - 44 White
+  {   'team1': 'Black',
+      'team1_players': ['Hernan', 'Paolo', 'Roberto', 'Sam', 'JJ'],
+      'team2': 'White',
+      'team2_players': ['Joe', 'Jared', 'Neftaly', 'Iiams', 'ChrisNorman'],
+      'winning_team': 'Black',
+          'player_stats': {
+          'Hernan': {'points': 2, '2pt_m': 1, '2pt_a': 6, '3pt_m': 0, '3pt_a': 1},
+          'Paolo': {'points': 8, '2pt_m': 4, '2pt_a': 9, '3pt_m': 0, '3pt_a': 1},
+          'Roberto': {'points': 19, '2pt_m': 8, '2pt_a': 14, '3pt_m': 0, '3pt_a': 1},
+          'Sam': {'points': 16, '2pt_m': 8, '2pt_a': 12, '3pt_m': 0, '3pt_a': 1},
+          'JJ': {'points': 0, '2pt_m': 0, '2pt_a': 5, '3pt_m': 0, '3pt_a': 3},
+          'Joe': {'points': 5, '2pt_m': 1, '2pt_a': 4, '3pt_m': 1, '3pt_a': 9},
+          'Jared': {'points': 16, '2pt_m': 2, '2pt_a': 9, '3pt_m': 0, '3pt_a': 3},
+          'Neftaly': {'points': 4, '2pt_m': 2, '2pt_a': 4, '3pt_m': 0, '3pt_a': 3},
+          'ChrisNorman': {'points': 12, '2pt_m': 3, '2pt_a': 6, '3pt_m': 2, '3pt_a': 8},
+          'Iiams': {'points': 7, '2pt_m': 2, '2pt_a': 8, '3pt_m': 1, '3pt_a': 4}
       }
   },
 ]
