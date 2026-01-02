@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import './Admin.css';
+import '../styles/Admin.css';
 
 const Admin = () => {
   const [password, setPassword] = useState('');

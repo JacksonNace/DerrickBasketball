@@ -1,7 +1,7 @@
 // src/Groups.tsx
 import { Link } from 'react-router-dom';
-import { groupsData } from './data/groups'; // Import your data
-import './App.css';
+import { groupsData } from '../data/groups'; // Import your data
+import '../styles/App.css';
 
 const Groups = () => {
   return (

@@ -132,3 +132,59 @@
   padding: 8px;
   border-top: 1px solid #333;
 }
+
+.game-meta-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.season-tag {
+  font-size: 0.7rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  padding: 2px 8px;
+  border-radius: 4px;
+}
+
+.season-tag.winter { background: var(--winter-blue); color: white; }
+.season-tag.summer { background: var(--summer-orange); color: white; }
+
+.game-date-text {
+  font-size: 0.85rem;
+  color: var(--text-muted);
+}
+
+.score-val {
+  font-weight: 800;
+  font-size: 1.2rem;
+  margin: 0 5px;
+  color: var(--primary-blue); /* Or any accent color */
+}
+
+.vs-divider {
+  opacity: 0.5;
+  font-weight: 300;
+  margin: 0 10px;
+}
+
+.roster-row {
+  font-size: 0.9rem;
+  margin-bottom: 4px;
+  line-height: 1.4;
+}
+
+.roster-label {
+  font-weight: bold;
+  color: var(--text-main);
+}
+
+.box-score-title {
+  font-size: 0.8rem;
+  text-transform: uppercase;
+  color: var(--text-muted);
+  margin: 15px 0 5px 0;
+  border-bottom: 1px solid var(--secondary-gray);
+  padding-bottom: 2px;
+}

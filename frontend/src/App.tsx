@@ -1,6 +1,6 @@
 
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
-import Groups from './Groups';
+import Groups from './components/Groups';
 import Nav from './components/Nav';
 import Derrick from './pages/Derrick';
 import Admin from './pages/Admin'
