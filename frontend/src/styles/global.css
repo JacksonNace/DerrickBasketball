@@ -1,4 +1,6 @@
 /* src/styles/variables.css */
+
+/* * { border: 1px solid red !important; } */
 :root {
   /* Brand Colors */
   --primary-blue: #007bff;

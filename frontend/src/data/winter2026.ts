@@ -1,4 +1,4 @@
-export const winterPlayers = ['Astor', 'Ahsanul', 'Bockoven', 'Chance', 'ChrisLeger', 'ChrisNorman', 'Denny', 'Greg', 'Hernan', 'Jackson', 'Jared', 'Joe', 'Landon', 'Matt', 'Mason', 'Mikey', 'Nefty', 'Paolo', 'Quan', 'Roberto', 'Sam', 'Scott', 'Trace', 'Waltman'];
+export const winterPlayers = ['Astor', 'Ahsanul', 'Bockoven', 'Chance', 'ChrisLeger', 'ChrisNorman', 'Denny', 'Greg', 'Hernan', 'Jackson', 'Jared','JJ', 'Joe', 'Landon', 'Matt', 'Mason', 'Mikey', 'Nefty', 'Paolo', 'Quan', 'Roberto', 'Sam', 'Scott', 'Trace', 'Waltman'];
 
 export const winterGames = [
   {
@@ -96,5 +96,15 @@ export const winterGames = [
       'ChrisNorman': {'points': 12, '2pt_m': 3, '2pt_a': 6, '3pt_m': 2, '3pt_a': 8},
       'Iiams': {'points': 7, '2pt_m': 2, '2pt_a': 8, '3pt_m': 1, '3pt_a': 4}
       }
+  },
+    {
+    date: '2026-1-05',
+    team1: 'Black',
+    team1_players: ['Joe', 'ChrisNorman', 'Landon', 'Hernan', 'Roberto'],
+    team1_score: 28,
+    team2: 'White',
+    team2_players: ['Jackson', 'Sam', 'Waltman', 'ChrisLeger', 'JJ'],
+    team2_score: 38,
+    winning_team: 'White'
   },
 ];

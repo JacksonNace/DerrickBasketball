@@ -1,14 +1,17 @@
-/* src/components/Nav/Nav.css */
+/* Nav.css - Cleaned & Dynamic */
+
 .top-nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 0 40px;
   height: 70px;
-  background-color: #ffffff;
-  border-bottom: 1px solid #eee;
-  position: sticky;
+  background-color: var(--card-bg); /* Dark background */
+  border-bottom: 1px solid var(--secondary-gray);
+  position: fixed; /* Better for staying at the top */
   top: 0;
+  left: 0;
+  right: 0;
   z-index: 1000;
 }
 
@@ -19,16 +22,17 @@
 }
 
 .nav-title {
-  font-size: 1.25rem;
+  font-size: 1.1rem;
   font-weight: 700;
   margin: 0;
-  color: #1a1a1a;
+  color: var(--text-main); /* White text */
 }
 
 .back-btn {
   text-decoration: none;
-  color: #007AFF;
+  color: var(--primary-blue);
   font-weight: 500;
+  font-size: 0.9rem;
 }
 
 .nav-links {
@@ -36,45 +40,26 @@
   list-style: none;
   margin: 0;
   padding: 0;
-  gap: 10px;
+  gap: 15px;
 }
 
 .nav-links a {
   text-decoration: none;
-  color: #666;
+  color: var(--text-muted); /* #b3b3b3 */
   padding: 8px 16px;
-  border-radius: 1px;
+  border-radius: 6px;
+  font-size: 0.9rem;
   font-weight: 500;
-  transition: all 0.2s;
+  transition: all 0.2s ease;
 }
 
 .nav-links a:hover {
-  background-color: #f5f5f5;
-  color: #000;
+  background-color: rgba(255, 255, 255, 0.05);
+  color: var(--text-main);
 }
 
+/* The Active state matches your primary blue or a clean highlight */
 .nav-links a.active {
-  background-color: #5f5f5f;
+  background-color: var(--primary-blue);
   color: white;
-}
-
-.side-nav {
-  width: 100% !important;
-  height: 70px !important;
-  position: fixed !important;
-  top: 0 !important;
-  left: 0 !important;
-  display: flex !important;
-  flex-direction: row !important;
-  align-items: center !important;
-  justify-content: space-between !important;
-  padding: 0 40px !important;
-  box-sizing: border-box !important;
-}
-
-.nav-links {
-  display: flex !important;
-  flex-direction: row !important;
-  gap: 20px !important;
-  margin: 0 !important;
 }

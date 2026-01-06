@@ -1,26 +1,31 @@
+/* App.css */
 html, body, #root {
   height: 100%;
   margin: 0;
   padding: 0;
-  background-color: #1e1e1e;
+  background-color: var(--background-dark); 
   font-family: 'Inter', sans-serif;
+  color: var(--text-main); /* Forces default text to white */
 }
 
 .MainWrapper {
-  display: grid;
-  place-items: center;
-  min-height: 100vh; 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
   width: 100%;
+  background-color: var(--background-dark);
 }
 
+/* The container for your groups/main nav */
 .GroupsBoundaryBox {
   width: 90%;
   max-width: 450px;
-  background-color: #2e2e2e;
+  background-color: var(--card-bg);
   border-radius: 12px;
-  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.12);
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.6);
   overflow: hidden;
-  border: 1px solid #ddd;
+  border: 1px solid var(--secondary-gray);
 }
 
 .BoxTitle {
@@ -28,57 +33,32 @@ html, body, #root {
   padding: 20px;
   text-align: center;
   font-size: 1.25rem;
-  font-weight: 600;
-  color: #1a1a1a;
-  border-bottom: 1px solid #eee;
+  color: var(--text-main);
+  border-bottom: 1px solid var(--secondary-gray);
 }
 
 .GroupButton {
   display: block;
   width: 100%;
   padding: 24px;
-  text-align: center; 
-  text-decoration: none;
-  font-size: 1.1rem;
-  font-weight: 500;
-  color: #007AFF;
-  background: none;
+  text-align: center;
+  color: var(--primary-blue);
+  background: transparent;
   border: none;
   transition: background 0.2s ease;
 }
 
 .GroupButton:hover {
-  background-color: #f8f9fa;
+  background-color: rgba(255, 255, 255, 0.05); /* Very subtle hover */
 }
 
-.DerrickContainer {
-  padding: 40px;
-  font-family: sans-serif;
+.derrick-page, .group-layout-container {
+  padding-top: 70px; /* Matches the nav height */
 }
 
-.HorizontalDivider {
-  border: 0;
-  border-top: 1px solid #eee;
-  margin: 0;
-  width: 100%;
-}
-
-.GroupItemWrapper {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-.group-layout-container {
-  display: flex;
-  flex-direction: column;
-  min-height: 100vh;
-}
-
-.group-main-content {
-  flex: 1;
-  width: 100%;
+.MainWrapper {
   display: flex;
   justify-content: center;
-  padding: 40px 20px;
+  align-items: center;
+  min-height: 100vh;
 }

@@ -1,19 +1,72 @@
 /* src/Derrick/Players.css */
 
+.players-header {
+  max-width: 900px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.season-toggle {
+  display: flex;
+  background: var(--card-bg);
+  border-radius: 2px;
+  padding: 4px;
+  border: 1px solid var(--secondary-gray);
+  width: 100%;
+  max-width: 400px; /* Adjust this to control the width of the button bar */
+}
+
+.season-toggle button {
+  flex: 1;
+  padding: 8px 16px;
+  border: none;
+  background: transparent;
+  color: var(--text-muted);
+  cursor: pointer;
+  transition: all 0.2s ease;
+  font-weight: 600;
+}
+
+.season-toggle button.active {
+  background: var(--primary-blue);
+  color: white;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+}
+
+/* FIX: Styled search bar to match the dashboard theme */
+.player-search-bar {
+  width: 100%;
+  max-width: 300px;
+  background-color: var(--card-bg);
+  border: 1px solid var(--secondary-gray);
+  border-radius: 2px;
+  padding: 10px 15px;
+  color: var(--text-main);
+  font-size: 0.9rem;
+  transition: border-color 0.2s;
+}
+
+.player-search-bar:focus {
+  outline: none;
+  border-color: var(--primary-blue);
+}
+
 .players-grid {
   display: flex;
-  flex-direction: column; /* Stack cards vertically to allow them to be "longer" */
+  flex-direction: column;
   gap: 15px;
   padding: 20px 0;
-  max-width: 900px; /* Limits the horizontal stretch for readability */
+  max-width: 900px;
   margin: 0 auto;
 }
 
 .player-card {
   background-color: #1e1e1e;
   border: 1px solid #333;
-  border-radius: 10px;
-  padding: 12px 20px; /* Reduced vertical padding, increased horizontal */
+  border-radius: 2px;
+  padding: 12px 20px;
   color: white;
   display: flex;
   flex-direction: column;
@@ -23,12 +76,10 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin-bottom: 8px; /* Reduced margin */
+  margin-bottom: 8px;
   border-bottom: 1px solid #333;
   padding-bottom: 6px;
 }
-
-/* src/Derrick/Players.css */
 
 .player-stats-horizontal {
   display: flex;
@@ -41,17 +92,17 @@
 .stat-column {
   display: flex;
   flex: 1;
-  flex-direction: row; /* Force horizontal row */
-  justify-content: space-around; /* Distribute items evenly */
+  flex-direction: row;
+  justify-content: space-around;
   gap: 15px;
 }
 
 .stat-item {
   display: flex;
-  flex-direction: row; /* Keep label and value side-by-side */
+  flex-direction: row;
   align-items: center;
   gap: 8px;
-  white-space: nowrap; /* Prevent the % from dropping to a new line */
+  white-space: nowrap;
 }
 
 .stat-item .label {
@@ -66,8 +117,9 @@
   font-size: 1rem;
   color: #ffffff;
 }
-.streak-badge.W { background-color: #28a745; }
-.streak-badge.L { background-color: #dc3545; }
+
+.streak-badge.W { background-color: #28a745; padding: 2px 8px; border-radius: 2px; font-size: 0.75rem; font-weight: bold; }
+.streak-badge.L { background-color: #dc3545; padding: 2px 8px; border-radius: 2px; font-size: 0.75rem; font-weight: bold; }
 
 .name-action-group {
   display: flex;
@@ -80,7 +132,7 @@
   border: 1px solid #444;
   color: #007AFF;
   padding: 4px 10px;
-  border-radius: 6px;
+  border-radius: 2px;
   font-size: 0.75rem;
   cursor: pointer;
   transition: all 0.2s;
@@ -98,7 +150,7 @@
   border-top: none;
   border-radius: 0 0 12px 12px;
   padding: 15px 24px;
-  margin-top: -5px; /* Pull it up to connect with the card */
+  margin-top: -5px;
   animation: slideDown 0.3s ease-out;
 }
 
@@ -121,7 +173,7 @@
   align-items: center;
   gap: 15px;
   padding: 10px 15px;
-  border-bottom: 1px solid var(--card-border);
+  border-bottom: 1px solid #333;
 }
 
 .hist-col-meta {
@@ -148,22 +200,10 @@
   font-size: 0.9rem;
 }
 
-hist-stat-val small {
+.hist-stat-val small {
   margin-left: 3px;
   opacity: 0.6;
   font-size: 0.7rem;
-}
-
-.no-stats-text {
-  opacity: 0.4;
-  font-style: italic;
-  font-size: 0.85rem;
-}
-
-.history-main-info {
-  display: flex;
-  align-items: center;
-  gap: 12px;
 }
 
 .result-indicator {
@@ -180,63 +220,7 @@ hist-stat-val small {
 .result-indicator.win { background: #28a745; color: white; }
 .result-indicator.loss { background: #dc3545; color: white; }
 
-.history-player-stats {
-  display: flex;
-  gap: 15px;
-  font-size: 0.85rem;
-}
-
-.hist-stat {
-  color: #ddd;
-}
-
-.hist-stat strong {
-  color: #007AFF;
-}
-
-.hist-stat small {
-  color: #666;
-  font-size: 0.65rem;
-  text-transform: uppercase;
-}
-
-.no-stats-text {
-  color: #555;
-  font-size: 0.75rem;
-  font-style: italic;
-}
-
-.history-result.white { color: #fff; }
-.history-result.black { color: #aaa; }
-
 @keyframes slideDown {
   from { opacity: 0; transform: translateY(-10px); }
   to { opacity: 1; transform: translateY(0); }
-}
-
-.season-toggle {
-  display: flex;
-  background: var(--card-bg);
-  border-radius: 8px;
-  padding: 4px;
-  margin-bottom: 15px;
-  border: 1px solid var(--secondary-gray);
-}
-
-.season-toggle button {
-  flex: 1;
-  padding: 8px 16px;
-  border: none;
-  background: transparent;
-  color: var(--text-muted);
-  cursor: pointer;
-  border-radius: 6px;
-  transition: all 0.2s ease;
-  font-weight: 600;
-}
-
-.season-toggle button.active {
-  background: var(--primary-blue);
-  color: white;
-  box-shadow: 0 2px 4px rgba(0,0,0,0.2);
 }

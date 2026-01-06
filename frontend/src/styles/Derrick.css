@@ -1,190 +1,206 @@
+/* Derrick.css */
+
 .derrick-page {
+  width: 100%;
   min-height: 100vh;
-  color: #333;
-}
-
-.derrick-nav {
-  padding: 20px;
-  display: flex;
-  align-items: center;
-  gap: 20px;
-  border-bottom: 1px solid #eee;
-}
-
-.back-btn {
-  text-decoration: none;
-  color: #007AFF;
-  font-weight: 500;
-}
-
-.derrick-content {
-  padding: 40px;
-}
-
-.placeholder-card {
-  border: 2px dashed #ccc;
-  border-radius: 8px;
-  padding: 40px;
-  text-align: center;
-}
-
-.content-area, main[style*="margin-left"] {
-  margin-left: 0 !important; /* Kill the sidebar gap */
-  padding-top: 100px !important; /* Push content down so it's not under the Nav */
-  width: 100% !important;
-  display: flex !important;
-  justify-content: center !important;
-}
-
-.derrick-page {
-  width: 100%;
-  display: flex;
-  justify-content: center;
+  background-color: var(--background-dark);
 }
 
 .derrick-content {
   width: 100%;
   max-width: 800px;
+  padding: 40px 20px;
   margin: 0 auto;
 }
 
-.placeholder-card {
-  border: 2px dashed #ccc;
-  border-radius: 8px;
-  padding: 40px;
-  text-align: center;
-  background-color: white;
+.section-title {
+  color: var(--text-main);
+  margin-bottom: 30px;
 }
 
-.derrick-content {
-  padding: 20px;
-  max-width: 800px;
-  margin: 0 auto;
-}
-
-.games-container {
-  display: flex;
-  flex-direction: column;
-  gap: 20px;
-}
-
-/* Individual Game Card Box */
+/* Individual Game Card with Borders */
 .game-card {
-  background-color: #1e1e1e;
-  border: 1px solid #333;
+  background-color: var(--card-bg); /* #1e1e1e */
+  border: 1px solid var(--secondary-gray); /* Subtle border for separation */
   border-radius: 12px;
-  padding: 20px;
-  color: #bbb;
-  box-shadow: 0 4px 6px rgba(0,0,0,0.3);
+  padding: 24px;
+  margin-bottom: 20px;
 }
 
-.game-card-header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  border-bottom: 1px solid #333;
-  padding-bottom: 12px;
-  margin-bottom: 12px;
+.game-date-text {
+  color: var(--text-muted); /* #b3b3b3 */
+  font-size: 0.85rem;
 }
 
 .teams-text {
-  font-size: 1.2rem;
+  color: var(--text-main); /* Pure White */
+  font-weight: 700;
 }
 
-.winner-badge {
-  padding: 4px 12px;
-  border-radius: 20px;
-  font-size: 0.85rem;
-  text-transform: uppercase;
-  background: #444;
+.roster-label {
+  color: var(--text-main);
 }
 
-.winner-badge.white { background: #fff; color: #aaa; border: 1px solid #1e1e1e;}
-.winner-badge.black { background: #1e1e1e; color: #fff; border: 1px solid #aaa; }
-
-.rosters-section p {
-  margin: 4px 0;
-  font-size: 0.9rem;
-  color: #bbb;
+.roster-row {
+  color: var(--text-muted); /* #b3b3b3 */
 }
 
-/* Stats Table Styling */
+/* Stats Table */
 .stats-section {
-  margin-top: 15px;
-  background: #252525;
+  background-color: rgba(255, 255, 255, 0.02); /* Very faint lift */
   border-radius: 8px;
-  padding: 10px;
+  padding: 16px;
+  margin-top: 20px;
 }
 
 .stats-table {
   width: 100%;
-  border-collapse: collapse;
-  font-size: 0.85rem;
+  color: var(--text-main);
 }
 
 .stats-table th {
-  text-align: left;
-  color: #888;
-  padding: 8px;
+  color: var(--text-muted);
+  border-bottom: 1px solid var(--secondary-gray);
+  padding: 10px;
+  font-size: 0.8rem;
 }
 
 .stats-table td {
-  padding: 8px;
-  border-top: 1px solid #333;
+  padding: 10px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.game-card-header {
+  display: flex;
+  justify-content: space-between; /* This pushes the Badge to the right */
+  align-items: center;
+  border-bottom: 1px solid var(--secondary-gray);
+  padding-bottom: 12px;
+  margin-bottom: 12px;
+}
+
+/* Winner Badge Styling */
+.winner-badge {
+  padding: 6px 12px;
+  border-radius: 4px;
+  font-size: 0.75rem;
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+/* The "Black Team" Winner Style */
+.winner-badge.black {
+  background-color: #000000;
+  color: #ffffff;
+  border: 1px solid var(--secondary-gray);
+}
+
+/* The "White Team" Winner Style */
+.winner-badge.white {
+  background-color: #ffffff;
+  color: #000000;
+  border: 1px solid #000000;
+}
+
+/* Stats Table Centering */
+.stats-table {
+  width: 100%;
+  border-collapse: collapse;
+  color: var(--text-main);
+  margin-top: 10px;
+}
+
+.stats-table th, 
+.stats-table td {
+  padding: 10px 5px;
+  text-align: center; /* Centers text in all columns */
+  border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+/* Keep the Player Name (first column) left-aligned for better readability */
+.stats-table th:first-child,
+.stats-table td:first-child {
+  text-align: left;
+  padding-left: 10px;
+}
+
+.stats-table th {
+  color: var(--text-muted);
+  font-size: 0.7rem;
+  text-transform: uppercase;
 }
 
 .game-meta-row {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-between; /* Pushes content to opposite ends */
   align-items: center;
-  margin-bottom: 10px;
+  margin-bottom: 12px;
 }
-
-.season-tag {
-  font-size: 0.7rem;
-  font-weight: bold;
-  text-transform: uppercase;
-  padding: 2px 8px;
-  border-radius: 4px;
-}
-
-.season-tag.winter { background: var(--winter-blue); color: white; }
-.season-tag.summer { background: var(--summer-orange); color: white; }
 
 .game-date-text {
   font-size: 0.85rem;
-  color: var(--text-muted);
+  color: var(--text-muted); /* #b3b3b3 */
+  font-weight: 500;
 }
 
-.score-val {
+/* 2. Header Row: Teams (Left) and Winner Badge (Right) */
+.game-card-header {
+  display: flex;
+  justify-content: space-between; 
+  align-items: center;
+  border-bottom: 1px solid var(--secondary-gray);
+  padding-bottom: 12px;
+  margin-bottom: 15px;
+}
+
+/* 3. Winner Badge Styling */
+.winner-badge {
+  padding: 4px 10px;
+  border-radius: 4px;
+  font-size: 0.7rem;
   font-weight: 800;
-  font-size: 1.2rem;
-  margin: 0 5px;
-  color: var(--primary-blue); /* Or any accent color */
+  text-transform: uppercase;
 }
 
-.vs-divider {
-  opacity: 0.5;
-  font-weight: 300;
-  margin: 0 10px;
+.winner-badge.black {
+  background-color: #000000;
+  color: #ffffff;
+  border: 1px solid var(--secondary-gray);
 }
 
-.roster-row {
-  font-size: 0.9rem;
-  margin-bottom: 4px;
-  line-height: 1.4;
+.winner-badge.white {
+  background-color: #ffffff;
+  color: #000000;
+  border: 1px solid #cccccc;
 }
 
-.roster-label {
-  font-weight: bold;
-  color: var(--text-main);
+/* 4. Stats Table Centering */
+.stats-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 10px;
+}
+
+.stats-table th, 
+.stats-table td {
+  padding: 10px 5px;
+  text-align: center; /* Centers all stat numbers */
+  border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+/* Align ONLY the Player Name to the left */
+.stats-table th:first-child,
+.stats-table td:first-child {
+  text-align: left;
+  padding-left: 10px;
+  width: 30%; /* Gives the name column more room */
 }
 
 .box-score-title {
-  font-size: 0.8rem;
+  font-size: 0.75rem;
   text-transform: uppercase;
   color: var(--text-muted);
-  margin: 15px 0 5px 0;
-  border-bottom: 1px solid var(--secondary-gray);
-  padding-bottom: 2px;
+  letter-spacing: 1px;
+  margin-bottom: 8px;
 }
