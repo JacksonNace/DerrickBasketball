@@ -22,7 +22,7 @@
 .game-card {
   background-color: var(--card-bg); /* #1e1e1e */
   border: 1px solid var(--secondary-gray); /* Subtle border for separation */
-  border-radius: 12px;
+  border-radius: 4px;
   padding: 24px;
   margin-bottom: 20px;
 }
@@ -48,7 +48,6 @@
 /* Stats Table */
 .stats-section {
   background-color: rgba(255, 255, 255, 0.02); /* Very faint lift */
-  border-radius: 8px;
   padding: 16px;
   margin-top: 20px;
 }
@@ -82,7 +81,7 @@
 /* Winner Badge Styling */
 .winner-badge {
   padding: 6px 12px;
-  border-radius: 4px;
+  border-radius: 3px;
   font-size: 0.75rem;
   font-weight: 800;
   text-transform: uppercase;
@@ -157,7 +156,7 @@
 /* 3. Winner Badge Styling */
 .winner-badge {
   padding: 4px 10px;
-  border-radius: 4px;
+  border-radius: 3px;
   font-size: 0.7rem;
   font-weight: 800;
   text-transform: uppercase;
