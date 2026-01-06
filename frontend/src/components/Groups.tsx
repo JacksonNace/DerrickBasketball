@@ -1,6 +1,6 @@
 // src/Groups.tsx
 import { Link } from 'react-router-dom';
-import { groupsData } from '../data/groups'; // Import your data
+import { groupsData } from '../data/groups';
 import '../styles/App.css';
 
 const Groups = () => {
@@ -13,7 +13,6 @@ const Groups = () => {
             <Link to={`/group/${group.id}`} className="GroupButton">
               {group.name}
             </Link>
-            {/* Divider logic */}
             {index !== groupsData.length - 1 && <hr className="HorizontalDivider" />}
           </div>
         ))}

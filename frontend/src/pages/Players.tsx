@@ -9,11 +9,8 @@ const Players = () => {
   const { groupId } = useParams();
   const [searchTerm, setSearchTerm] = useState('');
   const [expandedPlayer, setExpandedPlayer] = useState<string | null>(null);
-  
-  // New state for the season filter, defaulting to 'all'
   const [seasonFilter, setSeasonFilter] = useState<'all' | 'winter' | 'summer'>('all');
 
-  // 1. Determine which games/players to use based on the Filter
   let displayGames;
   let displayPlayers;
 
@@ -29,10 +26,7 @@ const Players = () => {
     displayPlayers = Array.from(new Set([...winterPlayers, ...summerPlayers]));
   }
 
-  // 2. Calculate Stats based on the filtered selection
   const currentStats = calculateAllPlayerStats(displayGames, displayPlayers);
-
-  // 3. Global History (Always includes everything for the dropdown)
   const allHistoricalGames = [
     ...[...winterGames].reverse().map(g => ({ ...g, season: 'Winter' })),
     ...[...summerGames].reverse().map(g => ({ ...g, season: 'Summer' }))
