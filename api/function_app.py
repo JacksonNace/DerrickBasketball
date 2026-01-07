@@ -1,0 +1,1 @@
+print("This will be an azure function")
