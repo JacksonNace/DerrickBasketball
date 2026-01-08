@@ -139,4 +139,26 @@ export const winterGames = [
     team2_score: 27,
     winning_team: 'Black'
   },
+  {   
+    date: '2025-1-08',
+    team1: 'Black',
+    team1_players: ['Hernan', 'Paolo', 'Bockoven', 'Mason', 'Quan'],
+    team1_score:23,
+    team2: 'White',
+    team2_players: ['Joe', 'Jackson', 'Triston', 'JJ', 'ChrisNorman'],
+    team2_score:30,
+    winning_team: 'White',
+    player_stats: {
+      'Hernan': {'points': 4, '2pt_m': 2, '2pt_a': 7, '3pt_m': 0, '3pt_a': 0},
+      'Paolo': {'points': 2, '2pt_m': 1, '2pt_a': 6, '3pt_m': 0, '3pt_a': 1},
+      'Quan': {'points': 4, '2pt_m': 2, '2pt_a': 6, '3pt_m': 0, '3pt_a': 5},
+      'Bockoven': {'points': 7, '2pt_m': 2, '2pt_a': 7, '3pt_m': 1, '3pt_a': 11},
+      'Mason': {'points': 6, '2pt_m': 3, '2pt_a': 9, '3pt_m': 0, '3pt_a': 3},
+      'Joe': {'points': 8, '2pt_m': 4, '2pt_a': 8, '3pt_m': 0, '3pt_a': 3},
+      'Jackson': {'points': 8, '2pt_m': 4, '2pt_a': 9, '3pt_m': 0, '3pt_a': 3},
+      'ChrisNorman': {'points': 4, '2pt_m': 2, '2pt_a': 6, '3pt_m': 0, '3pt_a': 2},
+      'JJ': {'points': 8, '2pt_m': 4, '2pt_a': 13, '3pt_m': 0, '3pt_a': 4},
+      'Triston': {'points': 2, '2pt_m': 1, '2pt_a': 7, '3pt_m': 0, '3pt_a': 0}
+      }
+  },
 ];
