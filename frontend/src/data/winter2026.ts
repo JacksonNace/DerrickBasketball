@@ -1,4 +1,4 @@
-export const winterPlayers = ['Astor', 'Ahsanul', 'Bockoven', 'Chance', 'ChrisLeger', 'ChrisNorman', 'Denny', 'Greg', 'Hernan', 'Jackson', 'Jared','JJ', 'Joe', 'Landon', 'Matt', 'Mason', 'Mikey', 'Nefty', 'Paolo', 'Quan', 'Roberto', 'Sam', 'Scott', 'Trace', 'Waltman'];
+export const winterPlayers = ['Astor', 'Ahsanul', 'Bockoven', 'Chance', 'ChrisLeger', 'ChrisNorman', 'Denny', 'Greg', 'Hernan', 'Jackson', 'Jared','JJ', 'Joe', 'Landon', 'Matt', 'Mason', 'Mikey', 'Nefty', 'Paolo', 'Triston', 'Quan', 'Roberto', 'Sam', 'Scott', 'Trace', 'Waltman'];
 
 export const winterGames = [
   {
@@ -107,6 +107,28 @@ export const winterGames = [
     team2_score: 38,
     winning_team: 'White'
   },
+  {   
+    date: '2025-1-06',
+    team1: 'Black',
+    team1_players: ['Hernan', 'Sam', 'ChrisNorman', 'JJ', 'Triston'],
+    team1_score:64,
+    team2: 'White',
+    team2_players: ['Joe', 'Jackson', 'Quan', 'Bockoven', 'Neftaly'],
+    team2_score:54,
+    winning_team: 'Black',
+    player_stats: {
+      'Hernan': {'points': 11, '2pt_m': 2, '2pt_a': 5, '3pt_m': 8, '3pt_a': 22},
+      'Sam': {'points': 11, '2pt_m': 4, '2pt_a': 4, '3pt_m': 1, '3pt_a': 4},
+      'ChrisNorman': {'points': 36, '2pt_m': 12, '2pt_a': 17, '3pt_m': 4, '3pt_a': 5},
+      'JJ': {'points': 4, '2pt_m': 2, '2pt_a': 4, '3pt_m': 0, '3pt_a': 2},
+      'Triston': {'points': 2, '2pt_m': 1, '2pt_a': 5, '3pt_m': 0, '3pt_a': 4},
+      'Joe': {'points': 28, '2pt_m': 2, '2pt_a': 5, '3pt_m': 8, '3pt_a': 22},
+      'Jackson': {'points': 8, '2pt_m': 4, '2pt_a': 7, '3pt_m': 0, '3pt_a': 0},
+      'Quan': {'points': 5, '2pt_m': 1, '2pt_a': 4, '3pt_m': 1, '3pt_a': 11},
+      'Bockoven': {'points': 13, '2pt_m': 2, '2pt_a': 4, '3pt_m': 3, '3pt_a': 13},
+      'Neftaly': {'points': 0, '2pt_m': 0, '2pt_a': 1, '3pt_m': 0, '3pt_a': 0}
+      }
+  },
   {
     date: '2025-1-07',
     team1: 'Black',
@@ -115,6 +137,6 @@ export const winterGames = [
     team2: 'White',
     team2_players: ['Jackson', 'Quan', 'ChrisLeger', 'Hernan', 'Jared'],
     team2_score: 27,
-    winning_team: 'White'
+    winning_team: 'Black'
   },
 ];
