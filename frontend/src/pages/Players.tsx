@@ -6,7 +6,7 @@ import { calculateAllPlayerStats } from '../data/statsEngine';
 import '../styles/Players.css';
 
 const Players = () => {
-  const { groupId } = useParams();
+  const { groupId: _groupId } = useParams();
   const [searchTerm, setSearchTerm] = useState('');
   const [expandedPlayer, setExpandedPlayer] = useState<string | null>(null);
   const [seasonFilter, setSeasonFilter] = useState<'all' | 'winter' | 'summer'>('all');

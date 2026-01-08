@@ -107,4 +107,14 @@ export const winterGames = [
     team2_score: 38,
     winning_team: 'White'
   },
+  {
+    date: '2025-1-07',
+    team1: 'Black',
+    team1_players: ['Joe', 'ChrisNorman', 'Mason', 'Waltman', 'Landon'],
+    team1_score: 39,
+    team2: 'White',
+    team2_players: ['Jackson', 'Quan', 'ChrisLeger', 'Hernan', 'Jared'],
+    team2_score: 27,
+    winning_team: 'White'
+  },
 ];

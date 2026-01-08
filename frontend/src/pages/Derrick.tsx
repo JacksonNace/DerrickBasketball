@@ -6,7 +6,7 @@ import '../styles/Derrick.css';
 const Derrick = () => {
   // groupId can be used if you wanted to filter this page to only one group,
   // but for now, we are showing the full "Recent Games" feed.
-  const { groupId } = useParams<{ groupId: string }>();
+  const { groupId: _groupId } = useParams<{ groupId: string }>();
 
   // 1. Tag games with their season and merge
   const allGames = [
